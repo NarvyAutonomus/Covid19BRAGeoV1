@@ -104,7 +104,7 @@ Outhers requirements:
     3. Breaking in small files with maximum 15k lines;
     4. Realize insert in empty database.
 
-        ![](images\img1.png)
+        ![](https://github.com/LucasMassucci/Covid19BRAGeoV1/blob/master/images/img1.png?raw=true)
 
 
 2. For send to Elasticsearch it will necessary cross with geolocalization data, due to hight workload to nifi get these informations of database, we need broke in small requisitions by dates, following this flow:
@@ -113,7 +113,7 @@ Outhers requirements:
 
     2. Editing a SQL query with purpose of insert the date in conformity with demand and create all necessary statments;
 
-        ![](images\img2.png) 
+        ![](https://github.com/LucasMassucci/Covid19BRAGeoV1/blob/master/images/img2.png?raw=true) 
 
     3. Making a split of all statements;
     4. Execute in database with ExecuteSQL Processor, breaking in small flowfile of 1k at 5k registries;
@@ -122,7 +122,7 @@ Outhers requirements:
     6. Insert in elasticsearch.
 
 #### Por fim  teremos a seguinte visão de fuxo:
-![](images\img3.png) 
+![](https://github.com/LucasMassucci/Covid19BRAGeoV1/blob/master/images/img3.png?raw=true) 
 
 ## Syncronization of new data 
 
@@ -136,7 +136,7 @@ Outhers requirements:
     7. Case the flow continue the InvokeHTTP will direct the response to "Prepare record" continuing the flow. 
 
 #### flow vision:
-![](images\img4.png) 
+![](https://github.com/LucasMassucci/Covid19BRAGeoV1/blob/master/images/img4.png?raw=true) 
 
 2. Inserting in Elasticsearch: 
 
@@ -147,18 +147,18 @@ Outhers requirements:
     5. Insert in Elastichsearch 
 
 #### flow vision:
-![](images\img5.png) 
+![](https://github.com/LucasMassucci/Covid19BRAGeoV1/blob/master/images/img5.png?raw=true) 
 
 
 ## Visualization on Kibana
 
 In maps can create a layer with base in documents and index covid, finally plot in map: 
 
-![](images\img6.png) 
+![](https://github.com/LucasMassucci/Covid19BRAGeoV1/blob/master/images/img6.png?raw=true) 
 
-![](images\img7.png) 
+![](https://github.com/LucasMassucci/Covid19BRAGeoV1/blob/master/images/img7.png?raw=true) 
 
-![](images\img8.png) 
+![](https://github.com/LucasMassucci/Covid19BRAGeoV1/blob/master/images/img8.png?raw=true) 
 
 
 
