@@ -121,7 +121,7 @@ Outhers requirements:
     5. A Split in unique files;
     6. Insert in elasticsearch.
 
-#### Por fim  teremos a seguinte visão de fuxo:
+#### Finally, we will have the following flow view:
 ![](https://github.com/LucasMassucci/Covid19BRAGeoV1/blob/master/images/img3.png?raw=true) 
 
 ## Syncronization of new data 
